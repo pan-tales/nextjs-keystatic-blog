@@ -10,7 +10,7 @@ export default config({
 			label: 'Homepage',
 			path: 'src/content/_homepage',
 			schema: {
-				headline: fields.text({ label: 'Headline' }),
+				headline: fields.text({ label: 'Headline' })
 			},
 		}),
 	},
