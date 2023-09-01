@@ -24,7 +24,11 @@ export default config({
 			schema: {
 				path: fields.slug({ name: { label: 'path' } }),
 				title: fields.text({ label: 'Title' }),
-				cover: fields.image({ label: 'Cover Image', }),
+				cover: fields.image({
+					label: 'Cover Image',
+					directory: 'public/images/avatars',
+					publicPath: '/images/avatars/'
+				}),
 				date: fields.date({ label: 'Date' }),
 				text: fields.document({
 					label: 'Text',
