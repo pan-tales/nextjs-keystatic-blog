@@ -12,8 +12,8 @@ export default async function Page() {
   return (
     <div className="max-w-[1200px] mx-auto p-4">
       <ul className="">
-        {articles.map(article => (
-          <li>
+        {articles.map((article, key) => (
+          <li key={key}>
             <Link className="shadow block w-[300px] p-4" href={`/${article.slug}`}>{article.entry.title}</Link>
           </li>
         ))}
